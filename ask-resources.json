@@ -1,0 +1,27 @@
+{
+  "askcliResourcesVersion": "2019-08-23",
+  "profiles": {
+    "default": {
+      "skillId": "",
+      "skillMetadata": {
+        "src": "./skill-package",
+        "lastDeployHash": ""
+      },
+      "code": {
+        "default": {
+          "src": "./code",
+          "lastDeployHash": ""
+        }
+      },
+      "skillInfrastructure": {
+        "type": "@ask-cli/cfn-deployer",
+        "userConfig": {
+          "runtime": "nodejs8.10",
+          "handler": "index.handler",
+          "templatePath": "./infrastructure/cfn-deployer/skill-stack.yaml"
+        },
+        "deployState": {}
+      }
+    }
+  }
+}
